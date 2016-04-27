@@ -5,6 +5,8 @@ USER root
 
 RUN npm install -g ember-cli bower
 
+RUN chown -R 1001:0 /opt/app-root/src/
+
 USER 1001
 
 EXPOSE 4200
